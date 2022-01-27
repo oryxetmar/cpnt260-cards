@@ -1,0 +1,157 @@
+#app {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+/* navigation bar */
+.top-bar a {
+  /* remove link color and underline */
+  color:  #71aa68;
+  text-decoration: none;
+  display: block;
+}
+
+i {
+  padding: 20px;
+}
+
+ul {
+  /* remove list styles */
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0;
+}
+
+/* nav links */
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  row-gap: 10px;
+  font-size: 1.5rem;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  background-color: white;
+  padding: 0 1rem;
+}
+
+.nav-wrapper {
+  display: flex;
+  flex-grow: 2;
+  display: flex;
+  justify-content: flex-end;
+  background-color: white;
+  color: white;
+  flex-direction: row;
+}
+
+.logo-wrapper a {
+  display: flex;
+  align-items: center;
+  transition: 300ms color;
+  color:  #71aa68;
+}
+.logo-wrapper a:hover {
+  color: #cbfac4;
+}
+.logo-wrapper p {
+  font-size: 1.5rem;
+}
+.logo-wrapper i {
+  font-size: clamp(3.5rem, 10vw, 4rem);
+}
+
+/* Layout of cards */
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+
+/* Card Style */
+.card {
+  /* layout inside card */
+  display: flex;
+  flex-direction: column;
+  
+  /* Design of Card */
+  border: 10px dotted  #89d5a2 ;
+  border-radius: 10px;
+  max-width: 300px;
+  margin: 12px auto;
+}
+
+figcaption {
+  min-width: 30ch;
+  max-width: 40ch;
+  text-align: center;
+}
+figcaption p {
+  text-align: center;
+  color: #3c9566;
+  font-family: Trebuchet MS;
+  padding: 15px;
+  
+}
+img {
+  width: 100%;
+  margin: 0 0 12px 0;
+  /* curved top and flat bottom */
+  border-radius: 10px 10px 0 0;
+  
+}
+
+/* Main Layout */
+.main {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: center;
+  
+}
+
+.main h3 {
+  display: flex;
+  justify-content: space-evenly;
+  border: 10px dotted #3c9566 ;
+  border-radius: 17px;
+  margin: 3rem 50px 5rem 50px;
+  padding: 2rem;
+}
+
+/* Text */
+h1, h2, h3, p {
+  font-family: Trebuchet MS;
+}
+h1, h2, h3, header p {
+  text-align: center;
+  color: #71aa68;
+  font-family: Trebuchet MS;
+}
+h1 {
+  box-shadow: 4px 6px  #369856 , 0 2px 20px  #369856 ;
+  margin: 3rem 50px 5rem 50px;
+  padding: 25px;
+  background-color: #daf2cf;
+}
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  margin-top: 10px;
+  background-color: #daf2cf;
+  color: #369856;
+}
